@@ -1,0 +1,22 @@
+{
+    "name": "updatedporfolio",
+    "version": "1.0.0",
+    "description": "updated 4/15/2022",
+    "main": "index.js",
+    "scripts": {
+        "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/PBnJson/Portfolio.git"
+    },
+    "author": "Joshua Clancy",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/PBnJson/Portfolio/issues"
+    },
+    "homepage": "https://github.com/PBnJson/Portfolio#readme",
+    "dependencies": {
+        "node-sass": "^7.0.1"
+    }
+}
