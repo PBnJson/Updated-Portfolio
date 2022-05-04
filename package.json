@@ -4,7 +4,7 @@
     "description": "updated 4/15/2022",
     "main": "index.js",
     "scripts": {
-        "sass": "node-sass -w ./ -o dist/css/ --recursive"
+        "sass": "node-sass -w ./ -o ./ --recursive"
     },
     "repository": {
         "type": "git",
