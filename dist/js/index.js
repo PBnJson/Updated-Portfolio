@@ -4,6 +4,7 @@ const menu = document.querySelector(".menu");
 const menuNav = document.querySelector(".menu-nav");
 const menuBranding = document.querySelector(".menu-branding");
 const navItems = document.querySelectorAll(".nav-item");
+const logIn = document.getElementById('adminBttn');
 // INITIAL STATE OF MENU
 let showMenu = false; //let bc its true or false
 
@@ -26,4 +27,8 @@ function toggleMenu() {
         navItems.forEach((item) => item.classList.remove("show"));
         showMenu = false;
     }
+}
+
+document.getElementById("adminBttn").onclick = function () {
+    location.href = "/login";
 }

@@ -17,6 +17,8 @@
     },
     "homepage": "https://github.com/PBnJson/Portfolio#readme",
     "dependencies": {
-        "node-sass": "^7.0.1"
+        "dotenv": "^16.0.1",
+        "node-sass": "^7.0.1",
+        "sequelize": "^6.20.1"
     }
 }
