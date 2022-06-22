@@ -1,3 +1,5 @@
+// import axios from "axios";
+
 //Targeting DOM
 const menuBtn = document.querySelector(".menu-btn");
 const menu = document.querySelector(".menu");
@@ -29,6 +31,7 @@ function toggleMenu() {
     }
 }
 
-document.getElementById("adminBttn").onclick = function () {
-    location.href = "/login";
-}
+// document.getElementById("adminBttn").onclick = function () {
+//     location.href = "/login";
+// }
+
