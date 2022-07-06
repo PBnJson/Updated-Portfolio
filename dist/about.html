@@ -1,82 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/f1b15fba33.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/f1b15fba33.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- if still broken change back to dist/css/main.css -->
     <link rel="stylesheet" href="./css/main.css" />
     <title>About Me</title>
-</head>
+  </head>
 
-<!-- <body id="bg-image"> -->
+  <!-- <body id="bg-image"> -->
 
-<body>
+  <body>
     <div class="overlay"></div>
     <header>
-        <div class="menu-btn">
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-        </div>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
 
-        <nav class="menu">
-            <div class="menu-branding">
-                <div class="picture"></div>
-            </div>
-            <ul class="menu-nav">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link"> HOME </a>
-                </li>
-                <li class="nav-item current">
-                    <a href="about.html" class="nav-link"> ABOUT </a>
-                </li>
-                <li class="nav-item">
-                    <a href="work.html" class="nav-link"> PROJECTS </a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link"> CONTACT </a>
-                </li>
-            </ul>
-        </nav>
+      <nav class="menu">
+        <div class="menu-branding">
+          <div class="picture"></div>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item current">
+            <a href="index.html" class="nav-link"> HOME </a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link"> ABOUT </a>
+          </li>
+          <li class="nav-item">
+            <a href="work.html" class="nav-link"> PROJECTS </a>
+          </li>
+          <li class="nav-item">
+            <a href="contacts.html" class="nav-link"> CONTACT </a>
+          </li>
+          <button class="nav-item">
+            <a href="login.html" class="nav-link">Add Projects</a>
+          </button>
+        </ul>
+      </nav>
     </header>
     <main id="about">
-        <h1 class="lg-heading">About <span class="tSecondary">Me</span></h1>
-        <h2 class="sm-heading">A little bit about me...</h2>
-        <div class="about-info">
-            <img src="./images/meintheclass.jpg" alt="Joshua Clancy" class="bio-image" />
-            <div class="bio">
-                <h2 class="tSecondary">BIO</h2>
-                <p>
-                    I could sit for hours on my computer, thinking of ways to solve a problem. Only to realize I forgot to save. Coding is my life now, and I love it. I have experience in many different fields such as construction/remodeling, bail bonds, auto glass replacement
-                    and teaching 1st, 2nd, and 3rd graders.
-                </p>
-            </div>
-            <div class="job job-1">
-                <h3>First JOB</h3>
-                <h4>Teacher</h4>
-                <p>
-                    I have been a teacher for the past 13 years. I was a Spanish bilingual teacher for 6 years, then transitioned to the monolingual classroom for another 7 years. I have taught 1st, 2nd, and 3rd grades.
-                </p>
-            </div>
-            <div class="job job-2">
-                <h3>Second JOB</h3>
-                <h4>Front End</h4>
-                <p>
-                    I have been working with vanilla Javascript, ES6, CSS/SASS and various styling frameworks; I have experience with browser, third-party, and server side API's.
-                </p>
-            </div>
-            <div class="job job-3">
-                <h3>Third JOB</h3>
-                <h4>Back End</h4>
-                <p>
-                    Along with front end development, I have experience building projects with Node, NPM, and Expressjs.
-                </p>
-            </div>
+      <h1 class="lg-heading">About <span class="tSecondary">Me</span></h1>
+      <h2 class="sm-heading">A little bit about me...</h2>
+      <div class="about-info">
+        <img
+          src="./images/meintheclass.jpg"
+          alt="Joshua Clancy"
+          class="bio-image"
+        />
+        <div class="bio">
+          <h2 class="tSecondary">BIO</h2>
+          <p>
+            I could sit for hours on my computer, thinking of ways to solve a
+            problem. Only to realize I forgot to save. Coding is my life now,
+            and I love it. I have experience in many different fields such as
+            construction/remodeling, bail bonds, auto glass replacement and
+            teaching 1st, 2nd, and 3rd graders.
+          </p>
         </div>
-        <!-- <div class="icons">
+        <div class="job job-1">
+          <h3>First JOB</h3>
+          <h4>Teacher</h4>
+          <p>
+            I have been a teacher for the past 13 years. I was a Spanish
+            bilingual teacher for 6 years, then transitioned to the monolingual
+            classroom for another 7 years. I have taught 1st, 2nd, and 3rd
+            grades.
+          </p>
+        </div>
+        <div class="job job-2">
+          <h3>Second JOB</h3>
+          <h4>Front End</h4>
+          <p>
+            I have been working with vanilla Javascript, ES6, CSS/SASS and
+            various styling frameworks; I have experience with browser,
+            third-party, and server side API's.
+          </p>
+        </div>
+        <div class="job job-3">
+          <h3>Third JOB</h3>
+          <h4>Back End</h4>
+          <p>
+            Along with front end development, I have experience building
+            projects with Node, NPM, and Expressjs.
+          </p>
+        </div>
+      </div>
+      <!-- <div class="icons">
             <a href="#!">
                 <i class="fa-brands fa-linkedin fa-2x"></i>
             </a>
@@ -90,6 +108,5 @@
     </main>
     <footer id="main-footer">Copyright &copy; 2022</footer>
     <script src="./js/index.js"></script>
-</body>
-
+  </body>
 </html>

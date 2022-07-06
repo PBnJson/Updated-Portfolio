@@ -2,174 +2,177 @@
 @import "config";
 @import "menu"; //menu after config
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    @include background;
-    background: $primary-color;
-    color: set-text-color($primary-color);
-    height: 100%;
-    margin: 0;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.5;
+  @include background;
+  background: $primary-color;
+  color: set-text-color($primary-color);
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
 }
 
 //HEADINGS
 h1,
 h2,
 h3 {
-    margin: 0;
-    font-weight: 400;
-    &.lg-heading {
-        font-size: 6rem;
-    }
-    &.sm-heading {
-        margin-bottom: 2rem;
-        padding: 0.2rem 1rem;
-        background: rgba(lighten($color: $primary-color, $amount: 2), 0.5);
-    }
+  margin: 0;
+  font-weight: 400;
+  &.lg-heading {
+    font-size: 6rem;
+  }
+  &.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(lighten($color: $primary-color, $amount: 2), 0.5);
+  }
 }
 
 a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 header {
-    position: fixed;
-    z-index: 2;
-    width: 100%;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
 }
 
 .tSecondary {
-    color: $secondary-color;
-    // text-shadow: 2px 2px 2px white;
+  color: $secondary-color;
+  // text-shadow: 2px 2px 2px white;
 }
 
 main {
-    padding: 4rem;
-    // height: 100%;
-    //this creates a sticky footer, -60px, height of the footer.
-    min-height: calc(100vh - 60px);
-    .icons {
-        margin-top: 1rem;
-        a {
-            padding: 0.4rem;
-            &:hover {
-                color: $secondary-color;
-                @include ease-out();
-            }
-        }
+  padding: 4rem;
+  // height: 100%;
+  //this creates a sticky footer, -60px, height of the footer.
+  min-height: calc(100vh - 60px);
+  .icons {
+    margin-top: 1rem;
+    a {
+      padding: 0.4rem;
+      &:hover {
+        color: $secondary-color;
+        @include ease-out();
+      }
     }
-    &#home {
-        overflow: hidden;
-        h1 {
-            margin-top: 20vh;
-        }
+  }
+  &#home {
+    overflow: hidden;
+    h1 {
+      margin-top: 20vh;
     }
+  }
 }
 
 .about-info {
-    display: grid;
-    grid-gap: 30px;
-    grid-template-areas: "bioimage bio bio" "job1 job2 job3";
-    grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 //COULD ALSO NEST IN THE .ABOUT-INFO TARGET
 .bio-image {
-    grid-area: bioimage;
-    margin: auto;
-    border-radius: 5px;
-    border: $secondary-color 1px solid;
-    width: 290px;
-    height: 350px;
+  grid-area: bioimage;
+  margin: auto;
+  border-radius: 5px;
+  border: $secondary-color 1px solid;
+  width: 290px;
+  height: 350px;
 }
 
 .bio {
-    grid-area: bio;
-    font-size: 1.5rem;
+  grid-area: bio;
+  font-size: 1.5rem;
 }
 
 .job-1 {
-    grid-area: job1;
+  grid-area: job1;
 }
 
 .job-2 {
-    grid-area: job2;
+  grid-area: job2;
 }
 
 .job-3 {
-    grid-area: job3;
+  grid-area: job3;
 }
 
 .job {
-    background: lighten($primary-color, 5);
-    padding: 0.5rem;
-    border-bottom: $secondary-color 5px solid;
+  background: lighten($primary-color, 5);
+  padding: 0.5rem;
+  border-bottom: $secondary-color 5px solid;
 }
 
 //PROJECTS/WORK
 .projects {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
-    margin: auto;
-    img {
-        display: flex;
-        width: 250px;
-        height: 200px;
-        border: 2px solid white;
-        &:hover {
-            opacity: 0.5;
-            border-color: $secondary-color;
-            box-shadow: 1px 1px 20px 0.5px $secondary-color;
-            @include ease-out;
-        }
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  img {
+    display: flex;
+    width: 250px;
+    height: 200px;
+    border: 2px solid white;
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      box-shadow: 1px 1px 20px 0.5px $secondary-color;
+      @include ease-out;
     }
+  }
 }
 
 //BUTTONS
 .btn {
-    display: block;
-    padding: 0.5rem 1rem;
-    border: 0;
-    margin-bottom: 0.3rem;
-    &:hover {
-        @include ease-out;
-        background: $secondary-color;
-        color: set-text-color($secondary-color);
-    }
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  &:hover {
+    @include ease-out;
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+  }
 }
 
 .btn-dark {
-    @extend .btn;
-    background: darken($primary-color, 50);
-    color: white;
-    width: 250px;
+  @extend .btn;
+  background: darken($primary-color, 50);
+  color: white;
+  width: 250px;
 }
 
 .btn-light {
-    @extend .btn;
-    background: lighten($primary-color, 50);
-    color: #333;
-    width: 250px;
+  @extend .btn;
+  background: lighten($primary-color, 50);
+  color: #333;
+  width: 250px;
 }
 
 #main-footer {
-    text-align: center;
-    padding: 1rem;
-    background: darken($primary-color, 10);
-    color: set-text-color($primary-color);
-    height: 60px;
+  text-align: center;
+  padding: 1rem;
+  background: darken($primary-color, 10);
+  color: set-text-color($primary-color);
+  height: 60px;
 }
 
 //LOGIN FORM
 
-form {border: 3px solid #f1f1f1;}
+form {
+  border: 3px solid #f1f1f1;
+}
 
-input[type=text], input[type=password] {
+input[type="text"],
+input[type="password"] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -179,7 +182,7 @@ input[type=text], input[type=password] {
 }
 
 button {
-  background-color: #04AA6D;
+  background-color: #04aa6d;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -210,6 +213,7 @@ img.avatar {
 
 .container {
   padding: 16px;
+  border: none;
 }
 
 span.psw {

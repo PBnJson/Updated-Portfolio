@@ -18,30 +18,61 @@
 <body>
 
 <h2>Login Form</h2>
-
+<div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+      <nav class="menu">
+        <div class="menu-branding">
+          <div class="picture"></div>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item current">
+            <a href="index.html" class="nav-link"> HOME </a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link"> ABOUT </a>
+          </li>
+          <li class="nav-item">
+            <a href="work.html" class="nav-link"> PROJECTS </a>
+          </li>
+          <li class="nav-item">
+            <a href="contacts.html" class="nav-link"> CONTACT </a>
+          </li>
+          <button class="nav-item">
+            <a href="login.html" class="nav-link">Add Projects</a>
+          </button>
+        </ul>
+      </nav>
 <form action="/login" method="post">
-  <div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+  <div class="projects" style="display: flex; justify-content: center;">
+    <img src="./images/welcomeJoshua.jpeg" alt="Avatar" class="avatar">
+    <img src="./images/welcomeJoshua.jpeg" alt="Avatar" class="avatar">
+    <img src="./images/welcomeJoshua.jpeg" alt="Avatar" class="avatar">
+    <img src="./images/welcomeJoshua.jpeg" alt="Avatar" class="avatar">
+    <img src="./images/welcomeJoshua.jpeg" alt="Avatar" class="avatar">
+
   </div>
 
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
-
-    <label for="psw"><b>Password</b></label>
+  <div class="container" style="border: none">
+    
+    <label for="psw" style="color: black;"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
         
-    <button type="submit">Login</button>
+    <button type="submit" style="background-color:#fff01f; color: black;">Login</button>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
   </div>
 
   <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
+    <button type="button" class="cancelbtn" style="background-color:#fff01f; color: black;"><a href="./index.html" class="nav-link">
+ Cancel</a></button>
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
 </form>
+
 
 <script src="./js/index.js"></script>
 
